@@ -3,6 +3,61 @@
 ### git clone 하기
 git clone {원격 레포지토리 주소}
 
+
+# 🔀 branch convention
+```
+├─main
+    ├─이름/main
+    │  └─이름/boj-10
+    │  └─이름/leet-12
+```
+각자 `main` 브랜치 아닌 `main/이름` 브랜치로 올리고, PR merge 대상도 `main/이름` 브랜치
+
+# 📁 directory convention
+```
+algorithms-study/
+│
+├── baekjoon/
+│   ├── 1000_두수의합/
+│   │   ├── README.md     # 문제 설명 및 접근
+│   │   ├── solution.cpp
+│   │   └── review.md     # 회고 / 복습 시 작성
+│   └── ...
+│
+├── programmers/
+│   ├── level1_완주하지못한선수/
+│   │   ├── solution.py
+│   │   └── README.md
+│   └── ...
+│
+└── leetcode/
+    └── ...
+```
+기본적인 틀 안에서 자유롭게..
+
+# commit convention
+
+`
+작업종류(#이슈번호): 사이트명-번호 문제제목
+자유설명
+ex)
+feat(#12): BOJ-1000 두 수의 합 해결
+어려움
+`
+
+`
+feat: BOJ-1000 두 수의 합 구현
+refactor: 코드 최적화
+docs: README 정리
+chore: 파일 구조 변경
+`
+예시) 
+`
+git add .
+git commit -m "feat: BOJ-1000 두 수의 합 구현"
+`
+
+--- 
 # Git 명령어
 
 ### Add
@@ -38,13 +93,14 @@ git log --oneline #주로 사용, 로그를 한 줄로 볼 수 있음.
 
 ### Push
 `git push origin`
+`git push origin 브랜치명`
 커밋한 내용을 origin 원격 레포지토리로 업로드
 
 ### Pull
 `git pull`
 현재 작업 중인 브랜치에서 원격 브랜치의 버전이 더 높을 때, 변경사항을 원격에서 로컬로 가져오는 명령어
 
-### 예시 작업 흐름 (브랜치 단위 문제 풀이)
+### 💻 예시 작업 흐름 (브랜치 단위 문제 풀이)
 ```
 git checkout -b feature/12-boj1000   # 문제용 브랜치 생성
 ... 코드 작성 ...

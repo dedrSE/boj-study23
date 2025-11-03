@@ -44,14 +44,18 @@ ex)
 feat(#12): BOJ-1000 두 수의 합 해결
 어려움
 `
+
 작업 라벨
+
 `
 feat: BOJ-1000 두 수의 합 구현
 refactor: 코드 최적화
 docs: README 정리
 chore: 파일 구조 변경
 `
+
 예시) 
+
 `
 git add .
 git commit -m "feat: BOJ-1000 두 수의 합 구현"

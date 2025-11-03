@@ -11,6 +11,25 @@ git clone {원격 레포지토리 주소}
 `git add .`
 작업 중인 모든 파일을 추가 및 Staged로 전환하는 명령어
 
+### Commit
+```
+git commit -m "Commit Message"
+
+git commit --amend
+
+git commit --amend -m "Commit message"
+```
+-m 옵션은 커밋에 이름을 적어주는 옵션
+--amend 옵션은 현재 커밋 내용을 제일 최근 커밋과 합치는 것.
+
+### Log
+```
+git log
+
+git log --oneline #주로 사용, 로그를 한 줄로 볼 수 있음.
+```
+과거 버전 확인
+
 ### Checkout
 `git checkout "Branch Name"`
 "Branch Name"의 브랜치로 이동하는 명령어

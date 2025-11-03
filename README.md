@@ -86,9 +86,9 @@ git log --oneline #주로 사용, 로그를 한 줄로 볼 수 있음.
 과거 버전 확인
 
 ### Checkout
-`git checkout "Branch Name"`
+```git checkout "Branch Name"```
 "Branch Name"의 브랜치로 이동하는 명령어
-`git checkout -b "New Branch Name" # 이 방법으로 브랜치 개설을 추천`
+```git checkout -b "New Branch Name" # 이 방법으로 브랜치 개설을 추천```
 새로운 브랜치 "New Branch Name"으로 개설하면서 이동하는 명령어
 
 ### Push

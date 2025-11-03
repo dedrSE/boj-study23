@@ -12,7 +12,7 @@ git clone {원격 레포지토리 주소}
     │  └─이름/leet-12
 ```
 각자 `main` 브랜치 아닌 `main/이름` 브랜치로 올리고, PR merge 대상도 `main/이름` 브랜치
-\n
+
 # 📁 directory convention
 ```
 algorithms-study/
